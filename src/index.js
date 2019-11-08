@@ -11,16 +11,10 @@ const elemente = document.getElementById('root')
 ReactDOM.render(
     <div>
         <Familia sobrenome = 'Pereira'>
-            <Membro nome= 'André' sobrenome = 'Pereira'/>
-            <Membro nome= 'Mariana' sobrenome = 'Pereira'/>
+            <Membro nome= 'André'/>
+            <Membro nome= 'Mariana'/>
         </Familia>
-        <Familia sobrenome = 'Silva'>
-            <Membro nome = 'Marcus' sobrenome = 'Silva'/>
-            <Membro nome = 'Jose' sobrenome = 'Siva'/>
-        </Familia>
-
-
-            {/* <FamiliaSantos/> */}
+        {/* <FamiliaSantos sobrenome = 'Silva'/> */}
             {/*<MultiElementos/>*/}
             {/* <CompA valor="Olá, eu sou A"></CompA>
         <B valor="B na área"></B> */}
