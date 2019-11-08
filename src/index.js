@@ -1,22 +1,29 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 //import PrimeiroComponenmente from './componentes/PrimeiroComponmente'
-import {CompA, CompB as B} from './componentes/DoisComponente'
-import MultiElementos from './componentes/MultiElementos'
+//import {CompA, CompB as B} from './componentes/DoisComponente'
+//import MultiElementos from './componentes/MultiElementos'
+//import FamiliaSantos from './componentes/FamiliaSantos'
+import Familia from './componentes/Familia'
+import Membro from './componentes/Membro'
+
 const elemente = document.getElementById('root')
 ReactDOM.render(
     <div>
-        {/*<MultiElementos/>*/}
-        <CompA valor="Olá, eu sou A"></CompA>
-        <B valor="B na área"></B>
-        {/*<PrimeiroComponenmente valor= 'Bom dia'/>*/}
-    </div>
-, elemente)
+        <Familia sobrenome = 'Pereira'>
+            <Membro nome= 'André' sobrenome = 'Pereira'/>
+            <Membro nome= 'Mariana' sobrenome = 'Pereira'/>
+        </Familia>
+        <Familia sobrenome = 'Silva'>
+            <Membro nome = 'Marcus' sobrenome = 'Silva'/>
+            <Membro nome = 'Jose' sobrenome = 'Siva'/>
+        </Familia>
 
 
-
-/*
->>>>>>> 231d72ac0fdd0e5e496a92fea7b4526ae980f116
-ReactDOM.render(jsx, elemente)
-const jsx = <h1>Olá React!</h1>
-*/
+            {/* <FamiliaSantos/> */}
+            {/*<MultiElementos/>*/}
+            {/* <CompA valor="Olá, eu sou A"></CompA>
+        <B valor="B na área"></B> */}
+            {/*<PrimeiroComponenmente valor= 'Bom dia'/>*/}
+    </div>, elemente)
+        
