@@ -4,16 +4,18 @@ import React from 'react';
 //import {CompA, CompB as B} from './componentes/DoisComponente'
 //import MultiElementos from './componentes/MultiElementos'
 //import FamiliaSantos from './componentes/FamiliaSantos'
-import Familia from './componentes/Familia'
-import Membro from './componentes/Membro'
+// import Familia from './componentes/Familia';
+// import Membro from './componentes/Membro';
+import ComponenteComFunção from './componentes/ComponenteComFunção'
 
 const elemente = document.getElementById('root')
 ReactDOM.render(
     <div>
-        <Familia sobrenome = 'Pereira'>
+        <ComponenteComFunção/>
+        {/* <Familia sobrenome = 'Pereira'>
             <Membro nome= 'André'/>
             <Membro nome= 'Mariana'/>
-        </Familia>
+        </Familia> */}
         {/* <FamiliaSantos sobrenome = 'Silva'/> */}
             {/*<MultiElementos/>*/}
             {/* <CompA valor="Olá, eu sou A"></CompA>
