@@ -1,6 +1,6 @@
 import React from 'react';
 
-const aprovados = ['Paula', 'João', 'Alex', 'Anderson']
+const aprovados = ['Tatilon', 'João', 'Alex', 'Anderson']
 aprovados.push('Marcos')
 
 export default props =>{

@@ -6,12 +6,18 @@ import React from 'react';
 //import FamiliaSantos from './componentes/FamiliaSantos'
 // import Familia from './componentes/Familia';
 // import Membro from './componentes/Membro';
-import ComponenteComFunção from './componentes/ComponenteComFunção'
+//import ComponenteComFunção from './componentes/ComponenteComFunção'
+//import Pai from './componentes/pai'
+//import Class from './componentes/classe';
+import Contador from './componentes/contador';
 
 const elemente = document.getElementById('root')
 ReactDOM.render(
     <div>
-        <ComponenteComFunção/>
+        <Contador numero = {0}/>
+        {/* <Class valor= 'Hello World'/> */}
+        {/* <Pai/> */}
+        {/* <ComponenteComFunção/> */}
         {/* <Familia sobrenome = 'Pereira'>
             <Membro nome= 'André'/>
             <Membro nome= 'Mariana'/>
