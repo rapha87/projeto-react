@@ -2,23 +2,25 @@ import React, {Component} from 'react';
 
 export default class Contador extends Component {
     state = {
-        numero1:0,
-        numero2:0
+        numero:0
       
     }
-    maisUm= (event) => {
-        this.setState({[event.target.name]: parseInt(event.target.value)+1 })
-    }
-    menosUm = (event) => {
-        this.setState({[event.target.name]: parseInt(event.target.value) - 1})
+    // maisUm= () => {
+    //     this.setState({ numero1: this.state.numero1 +1 })
+    // }
+    // menosUm = () => {
+    //     this.setState({numero1: this.state.numero1 -1 })
+    
+    alterar= dif =>{
+        this.setState({numero: this.state.numero + dif})
     }
 
     render() {
         return (
             <div >
-                <div>Números:{this.state.numero1}</div>
-                <button name='numero1' value ={this.state.numero1} onClick={this.menosUm}>Dec</button>
-                <button name='numero1' value ={this.state.numero1} onClick={this.maisUm}>Inc</button>
+                <div>Números:{this.state.numero}</div>
+                <button onClick={()=>this.alterar(-1)}>Dec</button>
+                <button onClick={()=>this.alterar(1)}>Inc</button>
             </div>
         )
     }

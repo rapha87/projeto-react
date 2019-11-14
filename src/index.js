@@ -8,14 +8,15 @@ import React from 'react';
 // import Membro from './componentes/Membro';
 //import ComponenteComFunção from './componentes/ComponenteComFunção'
 //import Pai from './componentes/pai'
-//import Class from './componentes/classe';
-import Contador from './componentes/contador';
-
+// import Class from './componentes/classe';
+//import Contador from './componentes/contador';
+import Hook from './componentes/hook'
 const elemente = document.getElementById('root')
 ReactDOM.render(
     <div>
-        <Contador numero = {0}/>
-        {/* <Class valor= 'Hello World'/> */}
+        <Hook/>
+        {/* <Contador numero = {0}/> */}
+        {/* <Class value= 'Hello World'/> */}
         {/* <Pai/> */}
         {/* <ComponenteComFunção/> */}
         {/* <Familia sobrenome = 'Pereira'>
